@@ -1,0 +1,66 @@
+  /*productos*/
+  
+  .productosDePicadas {
+    color: blue;
+  }
+  
+  .picadaGourmet, .picadaMediterranea, .picadaDeCampo, .picadaClasica {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  
+  .imagenes {
+    border-radius: 40px;
+    transition: transform .1s;
+    width: 115px;
+    height: 115px;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .picadas li {
+    color: rgb(128, 0, 0);
+    text-decoration: none;
+    text-align: left;
+  }
+  
+  .margen {
+    margin-top: 15px;
+  }
+  
+  .nombrePicadas {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .borde {
+    border: rgb(0, 0, 0);
+  }
+  
+  .ingredientesPrecio img {
+    height: 400px;
+    width: 450px;
+  }
+  
+  .flexbox {
+    display: flex;
+    justify-content: right;
+  }
+  
+  .precios {
+    font-size: 40px;
+    border-color: red;
+    border-style: none;
+    border-radius: 15px;
+    background-color: #ffde59;
+    color: white;
+  }

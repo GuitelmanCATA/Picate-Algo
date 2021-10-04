@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62, 5;
+}
+
+header {
+  background-image: linear-gradient(to right, #ffde59, #ffde53, #ffde4c, #ffde45, #ffde3d, #fee041, #fce346, #fbe54a, #f9ea59, #f7ef68, #f5f476, #f4f984);
+  h1 {
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .header__logo {
+    display: grid;
+    grid-template-columns: 500px 1000px;
+    grid-template-rows: 75px 40px;
+  }
+  
+  .navegacion li {
+    a {
+      text-decoration: none;
+      font-size: 30px;
+      padding: 0px;
+      color: black;
+      transform: scale(1, 1.5);
+      transition: all 1s;
+    }
+  
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .header__nav {
+    margin: 5px 50px;
+    text-align: center;
+  }
+  
+  .navegacion li a:hover {
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+  }
+  
+  h2 {
+    color: red;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+
+
+
+body {
+  background-color: #fafab3;
+}
+
+footer {
+  background-color: #fafab3;
+  display: grid;
+  grid-template-columns: 300fr 400fr 300fr;
+  grid-template-rows: 350fr 50fr;
+  grid-column-gap: 300fr;
+  grid-template-areas: "contacto ubicacion sugerencias""contacto ubicacion newsletter""contacto sitio     newsletter";
+  .footer__secciones {
+    display: inline-block;
+    font-size: 20px;
+    margin: 40px 100px;
+  }
+  #contacto {
+    grid-area: contacto;
+  
+    ul li {
+      display: block;
+    }
+  }
+  
+  #ubicacion {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #sugerencias {
+    display: flex;
+    flex-direction: column;
+    grid-area: sugerencias;
+  }
+  
+  #newsletter {
+    display: flex;
+    flex-direction: column;
+    grid-area: newsletter;
+  }
+  
+  .input {
+    height: 10px;
+    width: 10px;
+    transition: 1s;
+  
+    &:focus {
+      width: 20px;
+    }
+  }
+  
+  .redes li a {
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  
+  
+  h4 {
+    color: rgb(73, 4, 80);
+    grid-area: sitio;
+  }
+}
+
+
+
